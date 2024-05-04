@@ -19,8 +19,8 @@ int main(){
     printf("Los nombres escritos son:\n");
     for(int i=0; i<5;i++){
         printf("%d: %s\n",i+1,vector[i]);
+        free(vector[i]);
     }
-    free(vector);
     free(buff);
     return 0;
 }
